@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/Home.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="#home" class="brand-photo">MB</a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active" onclick="setActive(this)">Home</a></li>
+        <li><a href="#projetos" onclick="setActive(this)">Projetos</a></li>
+        <li><a href="#servicos" onclick="setActive(this)">Serviços</a></li>
+        <li><a href="#diplomas" onclick="setActive(this)">Diplomas</a></li>
+        <li><a href="#contato" class="nav-contact-btn" onclick="setActive(this)">Contato</a></li>
+      </ul>
+
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <i class="bi bi-list" id="menu-icon"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" onclick="closeMobileMenu()">Home</a>
+      <a href="#projetos" onclick="closeMobileMenu()">Projetos</a>
+      <a href="#servicos" onclick="closeMobileMenu()">Serviços</a>
+      <a href="#diplomas" onclick="closeMobileMenu()">Diplomas</a>
+      <a href="#contato" onclick="closeMobileMenu()">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span></span>
+          Disponível para projetos
+        </div>
+
+        <h1 class="hero-name">
+          Mateus<br><span class="accent">Bohn</span>
+        </h1>
+
+        <p class="hero-role">Desenvolvedor de website &amp; Designer</p>
+
+        <p class="hero-desc">
+      Sou desenvolvedor cursando o curso informatica para internet 
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projetos" class="btn-primary-custom">
+            Ver Projetos <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="#contato" class="btn-outline-custom">
+            Fale Comigo <i class="bi bi-chat-dots"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">5<span>+</span></div>
+            <div class="stat-label">meses de experiencia </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">0<span>+</span></div>
+            <div class="stat-label">Projetos entregues</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">0<span>+</span></div>
+            <div class="stat-label">Clientes satisfeitos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-wrap">
+          <div class="hero-image-placeholder">
+            <img src="./conteudo/1000016954.jpg" alt="">
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-icon">⚡</div>
+          <div>
+            <div class="hero-badge-text">Desenvolvedor</div>
+            <div class="hero-badge-val">Mateus </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container-custom">
+      <div class="fade-up">
+        <span class="section-label">⬡ Portfólio</span>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-sub">Trabalhos selecionados que demonstram minha capacidade técnica e criatividade.</p>
+      </div>
+
+      <div class="projects-grid fade-up">
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">
+            <i class="bi bi-cart3"></i>
+            <span class="project-num">01</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <!--<span class="tag">React</span>-->
+              <!--<span class="tag">Node.js</span>-->
+             <!--<span class="tag">MongoDB</span>-->
+            </div>
+            <h3 class="project-title">Espaço vazio para futuro projeto .</h3>
+            <p class="project-desc">Plataforma completa de vendas online com painel admin, pagamentos integrados e sistema de estoque em tempo real.</p>
+            <div class="project-links">
+
+            <!--Link do site do projeto entregue -->
+              <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i> Ver Demo</a>
+              <!--Link do git hub colocar um projeto -->
+              <a href="https://github.com/mateusbohntb-ai" class="project-link ghost"><i class="bi bi-github"></i> GitHub</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg,#0f2027,#203a43);">
+            <i class="bi bi-graph-up-arrow"></i>
+            <span class="project-num">02</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <!--  <span class="tag">Vue.js</span>-->
+               <!-- <span class="tag">Python</span>-->
+              <!--  <span class="tag">PostgreSQL</span>-->
+            </div>
+            <h3 class="project-title">Espaço vazio para projetos </h3>
+            <p class="project-desc">Sistema de análise de dados com gráficos interativos, relatórios customizáveis e alertas automatizados.</p>
+            <div class="project-links">
+              <!--Link do site para o site feito.-->
+              <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i> Ver Demo</a>
+              <!--Link do site github.-->
+              <a href="https://github.com/mateusbohntb-ai" class="project-link ghost" class="project-link ghost"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg,#1a0533,#2d1b69);">
+            <i class="bi bi-phone"></i>
+            <span class="project-num">03</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Espaço vazio para projetos</h3>
+            <p class="project-desc">Aplicativo mobile para gestão de tarefas e equipes com notificações push e sincronização em nuvem.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i> Ver Demo</a>
+              <a href="#" class="project-link ghost"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="container-custom">
+      <div class="fade-up">
+        <span class="section-label">⬡ O que ofereço</span>
+        <h2 class="section-title">Serviços</h2>
+        <p class="section-sub">Soluções completas do design ao deploy, com foco em qualidade e resultados.</p>
+      </div>
+
+      <div class="services-grid fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+          <h3 class="service-title">Desenvolvimento Web</h3>
+          <p class="service-desc">Criação de sites e sistemas web modernos, responsivos e de alto desempenho usando as melhores tecnologias do mercado.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-phone"></i></div>
+          <h3 class="service-title">Apps Mobile</h3>
+          <p class="service-desc">Desenvolvimento de aplicativos nativos e híbridos para iOS e Android, com foco em usabilidade e performance.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-palette"></i></div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">Design de interfaces intuitivas e atraentes. Prototipagem, wireframes e sistemas de design escaláveis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-cloud"></i></div>
+          <h3 class="service-title">Cloud & DevOps</h3>
+          <p class="service-desc">Configuração e gerenciamento de infraestrutura em nuvem, CI/CD e automação de deploys com Docker e Kubernetes.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-database"></i></div>
+          <h3 class="service-title">Backend & APIs</h3>
+          <p class="service-desc">Arquitetura de sistemas robustos, APIs RESTful e GraphQL, microsserviços e integrações com terceiros.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
+          <h3 class="service-title">Consultoria Técnica</h3>
+          <p class="service-desc">Análise e revisão de projetos existentes, escolha de tecnologias, code review e mentoria para equipes de dev.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- DIPLOMAS -->
+  <section id="diplomas">
+    <div class="container-custom">
+      <div class="fade-up">
+        <span class="section-label">⬡ Formação</span>
+        <h2 class="section-title">Diplomas &amp; Certificações</h2>
+        <p class="section-sub">Formação sólida e aprendizado contínuo em tecnologia e design.</p>
+      </div>
+
+      <div class="diplomas-list fade-up">
+        <div class="diploma-item">
+          <div class="diploma-icon"><i class="bi bi-mortarboard"></i></div>
+          <div class="diploma-info">
+            <div class="diploma-course">Bacharelado em Ciência da Computação</div>
+            <div class="diploma-institution">Universidade Federal — Joinville, SC</div>
+          </div>
+          <span class="diploma-year">2022</span>
+        </div>
+
+        <div class="diploma-item">
+          <div class="diploma-icon"><i class="bi bi-award"></i></div>
+          <div class="diploma-info">
+            <div class="diploma-course">Full Stack Web Development</div>
+            <div class="diploma-institution">Rocketseat — Bootcamp Intensivo</div>
+          </div>
+          <span class="diploma-year">2023</span>
+        </div>
+
+        <div class="diploma-item">
+          <div class="diploma-icon"><i class="bi bi-cloud-check"></i></div>
+          <div class="diploma-info">
+            <div class="diploma-course">AWS Certified Solutions Architect</div>
+            <div class="diploma-institution">Amazon Web Services</div>
+          </div>
+          <span class="diploma-year">2023</span>
+        </div>
+
+        <div class="diploma-item">
+          <div class="diploma-icon"><i class="bi bi-figma"></i></div>
+          <div class="diploma-info">
+            <div class="diploma-course">Google UX Design Certificate</div>
+            <div class="diploma-institution">Google — Coursera</div>
+          </div>
+          <span class="diploma-year">2024</span>
+        </div>
+
+        <div class="diploma-item">
+          <div class="diploma-icon"><i class="bi bi-shield-check"></i></div>
+          <div class="diploma-info">
+            <div class="diploma-course">Segurança em Aplicações Web</div>
+            <div class="diploma-institution">OWASP Foundation</div>
+          </div>
+          <span class="diploma-year">2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container-custom">
+      <div class="fade-up">
+        <span class="section-label">⬡ Vamos conversar</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-sub">Tem um projeto em mente? Adoraria ouvir sobre ele. Vamos criar algo incrível juntos.</p>
+      </div>
+
+      <div class="contact-grid fade-up">
+        <div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <div class="contact-label">EMAIL</div>
+              <div class="contact-value">gg@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <div class="contact-label">WHATSAPP</div>
+              <div class="contact-value">+55 (47) 99999-0000</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <div class="contact-label">LOCALIZAÇÃO</div>
+              <div class="contact-value">Joinville, Santa Catarina</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+            <div>
+              <div class="contact-label">LINKEDIN</div>
+              <div class="contact-value">linkedin.com/in/joao-dev</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label">NOME</label>
+            <input type="text" class="form-control-custom" placeholder="Seu nome completo" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">EMAIL</label>
+            <input type="email" class="form-control-custom" placeholder="seu@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">ASSUNTO</label>
+            <input type="text" class="form-control-custom" placeholder="Sobre o que é?" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">MENSAGEM</label>
+            <textarea class="form-control-custom" rows="5" placeholder="Conte sobre o seu projeto..."></textarea>
+          </div>
+          <button class="btn-primary-custom" style="width:100%; justify-content: center;">
+            Enviar Mensagem <i class="bi bi-send"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Mateus Bohn</div>
+          <p class="footer-brand-desc">
+            Desenvolvedor Full Stack apaixonado por criar experiências digitais únicas. Disponível para projetos freelance e oportunidades.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diplomas">Diplomas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Serviços</div>
+          <ul class="footer-links">
+            <li><a href="#servicos">Dev Web</a></li>
+            <li><a href="#servicos">Apps Mobile</a></li>
+            <li><a href="#servicos">UI/UX Design</a></li>
+            <li><a href="#servicos">Cloud & DevOps</a></li>
+            <li><a href="#servicos">Consultoria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Mais Informações</div>
+          <ul class="footer-links">
+            <li><a href="#">Download CV</a></li>
+            <li><a href="#">Blog Técnico</a></li>
+            <li><a href="#">Código Aberto</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Serviço</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 <strong>Mateus Bohn</strong> — Todos os direitos reservados.
+        </p>
+        <p class="footer-made">
+          Feito com <span style="color:var(--accent)">♥</span> em Joinville, SC
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="./script/Home/Home.js"></script>
+</body>
+</html>
